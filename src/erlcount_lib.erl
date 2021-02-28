@@ -9,7 +9,7 @@ find_erl(Directory) ->
 
 regex_count(Re, Str) ->
 	case re:run(Str, Re, [global]) of
-		notmatch -> 0;
+		nomatch -> 0;
 		{match, List} -> length(List)
 	end.
 
